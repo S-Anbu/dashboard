@@ -1,9 +1,17 @@
 import React from "react";
+import a from '../../assets/a.png'
+import b from '../../assets/b.png'
+import c from '../../assets/c.png'
+import d from '../../assets/d.png'
+import e from '../../assets/e.png'
+import f from '../../assets/f.png'
+import g from '../../assets/g.png'
+import { PopoverCustomAnimation } from "./PopoverCustomAnimation";
 
 const CourseCard = () => {
     const courses = [
         {
-          image: "https://via.placeholder.com/300",
+          image: a,
           title: "Premiere Pro CC for Beginners: Video Editing in Premiere",
           category: "Development",
           rating: 4.9,
@@ -11,7 +19,7 @@ const CourseCard = () => {
           price: 24.0,
         },
         {
-          image: "https://via.placeholder.com/300",
+          image: b,
           title: "Learn Python Programming Masterclass",
           category: "Development",
           rating: 4.0,
@@ -19,7 +27,7 @@ const CourseCard = () => {
           price: 49.0,
         },
         {
-          image: "https://via.placeholder.com/300",
+          image: c,
           title: "Data Structures & Algorithms Essentials",
           category: "Development",
           rating: 5.0,
@@ -28,7 +36,7 @@ const CourseCard = () => {
           originalPrice: 85.0,
         },
         {
-          image: "https://via.placeholder.com/300",
+          image: d,
           title: "Machine Learning A-Z™: Hands-On Python",
           category: "Development",
           rating: 4.8,
@@ -36,7 +44,7 @@ const CourseCard = () => {
           price: 89.0,
         },
         {
-            image: "https://via.placeholder.com/300",
+            image: e,
             title: "Premiere Pro CC for Beginners: Video Editing in Premiere",
             category: "Development",
             rating: 4.9,
@@ -44,7 +52,7 @@ const CourseCard = () => {
             price: 24.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: f,
             title: "Learn Python Programming Masterclass",
             category: "Development",
             rating: 4.0,
@@ -52,7 +60,7 @@ const CourseCard = () => {
             price: 49.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: g,
             title: "Data Structures & Algorithms Essentials",
             category: "Development",
             rating: 5.0,
@@ -61,7 +69,7 @@ const CourseCard = () => {
             originalPrice: 85.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: a,
             title: "Machine Learning A-Z™: Hands-On Python",
             category: "Development",
             rating: 4.8,
@@ -69,7 +77,7 @@ const CourseCard = () => {
             price: 89.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: b,
             title: "Premiere Pro CC for Beginners: Video Editing in Premiere",
             category: "Development",
             rating: 4.9,
@@ -77,7 +85,7 @@ const CourseCard = () => {
             price: 24.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: c,
             title: "Learn Python Programming Masterclass",
             category: "Development",
             rating: 4.0,
@@ -85,7 +93,7 @@ const CourseCard = () => {
             price: 49.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: d,
             title: "Data Structures & Algorithms Essentials",
             category: "Development",
             rating: 5.0,
@@ -94,7 +102,7 @@ const CourseCard = () => {
             originalPrice: 85.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: e,
             title: "Machine Learning A-Z™: Hands-On Python",
             category: "Development",
             rating: 4.8,
@@ -102,7 +110,7 @@ const CourseCard = () => {
             price: 89.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: f,
             title: "Premiere Pro CC for Beginners: Video Editing in Premiere",
             category: "Development",
             rating: 4.9,
@@ -110,7 +118,7 @@ const CourseCard = () => {
             price: 24.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: g,
             title: "Learn Python Programming Masterclass",
             category: "Development",
             rating: 4.0,
@@ -118,7 +126,7 @@ const CourseCard = () => {
             price: 49.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: a,
             title: "Data Structures & Algorithms Essentials",
             category: "Development",
             rating: 5.0,
@@ -127,14 +135,13 @@ const CourseCard = () => {
             originalPrice: 85.0,
           },
           {
-            image: "https://via.placeholder.com/300",
+            image: b,
             title: "Machine Learning A-Z™: Hands-On Python",
             category: "Development",
             rating: 4.8,
             students: "211,424",
             price: 89.0,
           },
-        // Add more courses here
       ];
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
@@ -165,10 +172,14 @@ const CourseCard = () => {
                 ${course.price}.00
               </span>
               {course.originalPrice && (
-                <span className="text-sm line-through text-gray-500">
+                <span className=" ml-2text-sm line-through text-gray-500">
                   ${course.originalPrice}.00
                 </span>
               )}
+              <PopoverCustomAnimation/>
+              {/* <button>
+              <svg className="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M3 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3"/></svg>
+              </button> */}
             </div>
           </div>
         </div>

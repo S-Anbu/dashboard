@@ -7,7 +7,7 @@ import CourseCard from './CourseCard';
 
 const MyCourse = () => {
 
-
+  
   return (
     <>
       <div className="flex">

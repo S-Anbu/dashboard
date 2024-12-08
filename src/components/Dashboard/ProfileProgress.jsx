@@ -40,10 +40,10 @@ const ProfileProgressCard = ({
 
       {/* Action Buttons */}
       <div className="flex items-center gap-4">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm">
+        <button className="bg-[#ff6736] hover:bg-red-400 text-white px-4 py-2 rounded-md text-sm">
           Edit Biography
         </button>
-        <button className="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 rounded-md">
+        <button className="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-gray-700 rounded">
           <ChevronDownIcon className="w-5 h-5 text-white" />
         </button>
       </div>
